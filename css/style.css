@@ -236,7 +236,7 @@ a.btn:nth-child(2)::before{
 }
 
 .social-icons{
-    margin-top: 8rem;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-between;
     width: 220px;
@@ -284,3 +284,26 @@ a.btn:nth-child(2)::before{
     width: 100%;
 }
 
+.home-image{
+    position: relative;
+}
+
+.img-box{
+    text-align: center;
+}
+
+.img-box>img{
+    position: relative;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    box-shadow: 0 0 25px var(--hover-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.img-box>img:hover{
+    box-shadow: 0 0 50px var(--hover-color);
+    /*0 0 100px var(--hover-color);*/
+}
