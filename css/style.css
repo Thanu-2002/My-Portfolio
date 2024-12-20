@@ -751,4 +751,14 @@ footer a{
     .filler-button .btn{
         font-size: .6rem;
     }
+    .img-box>img{
+        max-width: 100%;
+        height: auto;
+        width: 240px;
+    }
+    .img-about>img{
+        /*max-width: 100%;*/
+        /*height: auto;*/
+        width: 260px;
+    }
 }
