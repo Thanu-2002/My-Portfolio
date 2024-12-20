@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins",sans-serif;
+}
+
+:root{
+    --bg-color: #003244;
+    --second-bg-color: #003244;
+    --text-color:white;
+    --main-color: rgb(86, 234, 239); /*#0dd2af*/
+
+}
+.heading{
+    font-size: 3rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.project-box{
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 5rem 0;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.project-card{
+    max-height: 600px;
+    max-width: 450px;
+    background-color: rgba(0,0,0,0.3);
+    backdrop-filter: blur(30px);
+    border: 2px solid var(--main-color);
+    border-radius: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--main-color);
+    transition: 0.4s ease;
+
+}
+.project-card:hover{
+    box-shadow: 0 0 25px var(--main-color),
+    0 0 50px var(--main-color);
+    transform: scale(1.02);
+}
+.project-card img{
+    max-width: 18vw;
+    object-fit: cover;
+}
+.project-card h3{
+    font-size: 3rem;
+}
+.project-card p{
+    font-size: 1.6rem;
+}
