@@ -631,13 +631,39 @@ footer a{
     border-radius: 5px;
 }
 
-footer a{
+footer a i{
     font-size: 1rem;
     color: var(--second-bg-color);
 }
 
+/*-------Animation ----------*/
+.scroll-scale{
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 2s;
+}
 
-/*-------Break point----------*/
+.scroll-bottom{
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 3s;
+}
+
+.scroll-top{
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 3s;
+}
+
+.show-items{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+/*-------Responsive Break point----------*/
+
 @media (max-width: 991px) {
     header,
     header.sticky{
