@@ -671,10 +671,13 @@ footer a{
         display: block;
         transition: all .4s ease;
     }
+    #menu-icon.bx-x{
+        transform: rotate(-180deg);
+    }
     .navlist{
         display: flex;
         position: absolute;
-        top: 100%;
+        top: -1000px;
         right: 0;
         left: 0;
         flex-direction: column;
@@ -689,6 +692,6 @@ footer a{
         font-size: 1rem;
     }
     .navlist.open{
-
+        top: 100%;
     }
 }
