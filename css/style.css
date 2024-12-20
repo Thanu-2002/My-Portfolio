@@ -709,4 +709,46 @@ footer a{
     .about{
         flex-direction: column-reverse;
     }
+
+    .skill-main{
+        grid-template-columns: 1fr;
+    }
+    .filler-button{
+        margin: 2.5rem 0;
+    }
+    footer p{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 420px) {
+    html{
+        font-size: 80%;
+    }
+    footer p{
+        font-size: .6rem;
+    }
+    .filler-button .btn{
+        font-size: .8rem;
+    }
+    .img-box>img{
+        width: 300px;
+    }
+    .img-about>img{
+        /*max-width: 100%;*/
+        /*height: auto;*/
+        width: 300px;
+    }
+    .img-about p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    html{
+        font-size: 60%;
+    }
+    .filler-button .btn{
+        font-size: .6rem;
+    }
 }
