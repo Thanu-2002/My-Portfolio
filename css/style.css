@@ -635,3 +635,12 @@ footer a{
     font-size: 1rem;
     color: var(--second-bg-color);
 }
+
+
+/*-------Break point----------*/
+@media (max-width: 991px) {
+    header,
+    header.sticky{
+        padding: 15px 5%;
+    }
+}
