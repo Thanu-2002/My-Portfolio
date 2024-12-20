@@ -37,7 +37,8 @@
 }
 
 ::-webkit-scrollbar-thumb{
-    
+    background: var(--hover-color);
+    border-radius: .5rem;
 }
 
 body{
