@@ -643,4 +643,25 @@ footer a{
     header.sticky{
         padding: 15px 5%;
     }
+    footer{
+        padding: 15px 5%;
+    }
+    section{
+        padding: 50px 5%;
+    }
+    .navlist a{
+        padding: 8px 15px;
+    }
+    :root{
+        --big-font:2.2rem;
+        --nomal-font:1.8rem;
+        --neon-text-shadow:0 0 .8rem #12f7ff;
+        --h2-font:3rem;
+    }
+    .home-content{
+        margin-top: 5rem;
+    }
+    .social-icons{
+        margin-top: 2rem;
+    }
 }
