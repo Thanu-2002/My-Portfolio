@@ -636,6 +636,7 @@ footer a i{
     color: var(--second-bg-color);
 }
 
+
 /*-------Animation ----------*/
 .scroll-scale{
     opacity: 0;
@@ -657,8 +658,11 @@ footer a i{
 
 .show-items{
     opacity: 1;
-    transform: translateX(0);
+    transform:translateX(0);
 }
+
+
+
 
 
 
@@ -788,3 +792,4 @@ footer a i{
         width: 260px;
     }
 }
+

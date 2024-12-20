@@ -49,3 +49,25 @@ menuIcon.onscroll = ()=>{
     menuIcon.classList.remove("bx-x")
     navlist.classList.remove("open")
 }
+
+/////////////  anima   ///////////////////////////
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if (entry.isIntersecting){
+            entry.target.classList.add("show-items");
+        }else {
+            entry.target.classList.remove("show-items");
+        }
+    });
+});
+
+const scrollScale = document.querySelectorAll(".scroll-scale");
+scrollScale.forEach((e1)=>observer.observe(e1));
+
+const scrollBottom = document.querySelectorAll(".scroll-bottom");
+scrollBottom.forEach((e1)=>observer.observe(e1));
+
+const scrollTop = document.querySelectorAll(".scroll-top");
+scrollTop.forEach((e1)=>observer.observe(e1));
+
