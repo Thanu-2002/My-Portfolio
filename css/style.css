@@ -26,6 +26,20 @@
     0 0 100px rgba(18,247,255,0.3),
     0 0 150px rgba(18,247,255,0.3);
 }
+
+::-webkit-scrollbar{
+    height: 0;
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--second-bg-color);
+}
+
+::-webkit-scrollbar-thumb{
+    
+}
+
 body{
     font-family: "Poppins",sans-serif;
     background-color: var(--bg-color);
@@ -573,4 +587,32 @@ section{
 .formBtn .btn{
     cursor: pointer;
     font-size: 1rem;
+}
+
+
+/*-------footer section----------*/
+
+footer{
+    padding: 1.2rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer>p{
+    color: #bdbdbd;
+}
+
+footer a{
+    display: inline-flex;
+    justify-content: center;
+    color: var(--text-color);
+    background: var(--hover-color);
+    padding: .6rem;
+    border-radius: 5px;
+}
+
+footer a{
+    font-size: 1rem;
+    color: var(--second-bg-color);
 }
