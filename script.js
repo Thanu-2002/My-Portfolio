@@ -15,7 +15,7 @@
 // words[currentWordIndex].style.opacity = "1";
 //
 
-// active menu   ///////////////////////////
+///////// active menu   ///////////////////////////
 let menuLi = document.querySelectorAll('header ul li a');
 let section = document.querySelectorAll('section');
 
@@ -28,3 +28,10 @@ function activeMenu(){
 
 activeMenu();
 window.addEventListener("scroll",activeMenu);
+
+
+/////////////  navbar   ///////////////////////////
+const header = document.querySelector("header");
+window.addEventListener("scroll",function (){
+    header.classList.toggle("sticky",window.scrollY > 50)
+})
